@@ -1,0 +1,154 @@
+🚩En résumé
+
+Il existe de nombreux logiciels de gestion de version, qui peuvent être basés sur différents modèles :
+
+    Modèle centralisé : un serveur central contrôle toute la base de code du logiciel. 
+    Exemples de logiciels de versioning utilisant un modèle centralisé : SVN, CVS.
+
+    Modèle distribué : toutes les machines ont accès à la base de code, pas besoin de passer par un serveur central. 
+    Exemples de logiciels de versioning utilisant un modèle distribué : Git, Mercurial, Bazaar.
+
+Le modèle distribué présente plusieurs avantages : 
+
+    Moins de risques de perdre son code puisqu'il est accessible par plusieurs sources.
+
+    On peut travailler plus rapidement et sans être connecté à Internet puisqu'il n'y a pas besoin de se connecter à un serveur central.
+
+En plus des avantages du modèle distribué, Git a un autre atout : une grande communauté ! Cela facilite la collaboration et les échanges fructueux entre développeurs. :)
+
+
+🚩
+  834  git status
+  835  git init
+  836  git status
+  837  touch checklist.md
+  838  git status
+  839  git add checklist.md
+  840  git status
+  841  git commit -m "Ajouté fichier checklist"
+  842  git status
+
+🚩
+  944  git init
+  945  git status
+  946  touch un_fichier.md
+  947  add un_fichier.md
+  948  git add un_fichier.md
+  949  git commit -am "ajouté mon fichier"
+  950  nano un_fichier.md
+  951  git status
+  952  git add un_fichier.md
+  953  git status
+  954  git commit -m "Ajouté des informations au fichier principal"
+  955  nano un_fichier.md
+  956  git status
+  957  git add un_fichier.md
+  958  git commit -m "deuxieme ligne"
+	git log
+
+
+commit d29720af061e8568b0083505c60eb3b9716c5216 (HEAD -> master)
+Author: tahix <yahyaettahi@gmail.com>
+Date:   Fri Dec 7 18:32:38 2018 +0100
+
+    deuxieme ligne
+
+commit fdfa90b02dbae8d508937f8cf29e24b492dd4f77
+Author: tahix <yahyaettahi@gmail.com>
+Date:   Fri Dec 7 18:29:50 2018 +0100
+
+    Ajouté des informations au fichier principal
+
+commit 1b927f5c49b6c41b210ec42b6351d4d20a21422e //s'appelle le sha
+Author: tahix <yahyaettahi@gmail.com>
+Date:   Fri Dec 7 18:21:04 2018 +0100
+
+    ajouté mon fichier
+
+
+   
+  962  nano un_fichier.md
+  963  git commit -a -m "Dernière modification"
+ASTUCE au lieu d'ércrire 
+	git add un_fichier.md
+	git commit -m "Dernière modification"
+
+Jusqu'ici, lorsque vous mettez à jour un fichier dans votre repository, vous devez procéder en deux étapes : 
+
+    Ajouter votre fichier à l'index avec la commande  git add,
+
+    git add checklist-vacances.md
+
+    Faire un commit qui décrit la mise à jour de votre fichier avec la commande  git commit.
+
+    git commit -m "Ajouté itinéraire dans checklist-vacances.md"
+
+Et bien, si vous ne faites que mettre à jour un fichier que vous aviez déjà ajouté à l'index, vous pouvez condenser ces deux étapes de la façon suivante : 
+
+git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"
+
+L'option   -a demande à Git de mettre à jour les fichiers déjà existants dans son index.
+
+🚩
+Pour vous positionner sur un commit donné de votre historique, il vous suffit d'utiliser la commande git checkout de la façon suivante : 
+
+git checkout SHADuCommit
+
+Pour revenir à votre branche principale (au commit le plus récent), on utilise la même commande : 
+
+git checkout master
+
+🚩
+Lorsque vous travaillez sur un projet sur votre machine, il est important d'avoir un backup de votre code sur une autre machine, au cas où la vôtre tombe en panne par exemple. Une fois que vous avez travaillé sur votre code et effectué vos commits, vous allez donc les envoyer sur un remote, c'est-à-dire une autre machine qui peut être : 
+
+    interne (si vous avez la chance d'avoir plusieurs ordinateurs ;) )
+
+    ou externe (grâce à des services comme GitHub ou BitBucket). Utiliser un remote externe va aussi vous permettre de travailler sur des projets à plusieurs, pour que tout le monde ait accès aux dernières modifications de chacun sur un remote partagé. 
+
+🚩Créez votre premier repository
+
+git clone https://github.com/Yahya1946/demo_git.git (url https)
+
+🚩Envoyez votre code sur GitHub
+  980  cd demo_git/
+  981  ls
+  982  git status
+  984  nano README.md
+  985  git add README.md
+  986  git commit -m "Ajouté des information au readme"
+  987  git log
+  988  git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
