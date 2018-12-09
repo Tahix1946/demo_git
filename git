@@ -123,6 +123,19 @@ git clone https://github.com/Yahya1946/demo_git.git (url https)
   995  git commit -m "tuto git" (ajout de la commit)
   996  git push origin master (importation au github)
   997  git log
+Cette commande demande à Git :
+
+    "Envoie mes modifs dans la branche master de mon remote origin."
+
+     La branche master est la branche qui contient le code courant de votre repo GitHub. Ne vous préoccupez pas trop du terme "branche", on y reviendra par la suite.
+
+    Le remote sur lequel vous envoyez votre code est appelé origin par défaut. Ici, ce remote est GitHub. Si vous aviez plusieurs remotes (par exemple, votre téléphone portable ou un 2e ordinateur), vous pourriez envoyer votre code sur un remote "téléphone" ou "ordi2".
+
+🚩Récupérez des modifications
+Dans le chapitre précédent, vous avez vu comment envoyer vos modifications locales vers votre repo GitHub avec git push. Mais si vous modifiez votre repo GitHub en ligne, ou si vous travaillez avec d'autres personnes dessus et qu'elles envoient leurs modifications locales sur le repo en ligne, votre code local ne sera plus à jour.
+Pour récupérer en local les dernières modifications du repo GitHub, il vous faut utiliser la commande git pull : 
+
+git pull origin master
 
 
 
