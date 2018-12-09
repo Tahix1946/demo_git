@@ -137,35 +137,9 @@ Pour récupérer en local les dernières modifications du repo GitHub, il vous f
 
 git pull origin master
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 1006  git pull origin master
+ 1007  cat git
+ 1008  git log
+	nano git 
+	git commit -am "petite modif en local"
+	git push origin master
