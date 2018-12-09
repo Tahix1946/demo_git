@@ -118,7 +118,11 @@ git clone https://github.com/Yahya1946/demo_git.git (url https)
   986  git commit -m "Ajouté des information au readme"
   987  git log
   988  git push origin master
-
+  992  git add git (j'ai deja coller le fichier git dans le dossier demo_git) cette commande ajout le fichier git à l'index
+  
+  995  git commit -m "tuto git" (ajout de la commit)
+  996  git push origin master (importation au github)
+  997  git log
 
 
 
